@@ -1,61 +1,75 @@
+@font-face
+{
+	font-family: pointsoft;
+	src: url("Point Soft Semi Bold.otf") ;
+}
 body {
-	font-size: 16px;
-	color: white;
-	background-color: #8243d6;
-	font-family: 'Lobster', cursive;
+  font-size: 16px;
+  color: rgba(34, 33, 33, 0.884);
+  background-color:white;
+  font-family: pointsoft;
 }
 
-/* HEADER */
 #header-nav {
-	background-color: #530fad;
-	border-radius: 0;
-	border: 0;
-	color: white;
+  background-color:#999999;
+  border-radius: 0;
+  border: 1px;
+  min-height: 70px;
 }
 
-.navbar-brand p {
-	color: white;
-	font-size: 20px;
+.navbar-brand h1 {
+  font-family: pointsoft;
+  color: black;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: .75;
 }
 
-.navbar-brand a:focus, .navbar-brand a:hover {
-	text-decoration: none;
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
 
 #nav-list a {
-	color: white;
-	text-align: center;
+  color:black;
+  font-weight: bold;
 }
 
 #nav-list a:hover {
-	background-color: #8243d6;
-}
-/* END HEADER */
-
-/* Section */
-#home {
-	margin-bottom: 30px;
+  background:whitesmoke;
 }
 
-.row {
-	
-	position: relative;
-	float: left;
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
 }
 
-.row > div > article {
-	background-color: white;
-	text-align: justify;
-	margin-bottom: 20px;
-	padding: 12px;
-	color: black;
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
 }
-/* End Section */
 
+#page-title {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
 
-@media (max-width: 767px) {
-	.row > div > article {
-		width: 80%;
-		margin: 20px auto 0;
-	}
+#main-text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-background {
+  height: auto;
+  padding: 20px 40px 20px 40px;
+  background-color:#999999;
+  overflow: hidden;
+}
+
+h3 {
+  font-weight: bold;
+}
+.footer-copyright{
+  padding: 50px;
 }
